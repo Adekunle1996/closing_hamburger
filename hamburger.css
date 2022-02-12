@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+div h1{
+    text-transform: uppercase;
+}
+label{
+    margin:50px;
+    display: block;
+    position: relative;
+
+}
+span{
+    width: 20px;
+    height: 2px;
+    background-color: blue;
+    display: block;
+    margin: 5px;
+}
+#toggle{
+    display: none;
+}
+#toggle:checked + label span:nth-child(1){
+   background-color: red;
+   transform: rotate(135deg);
+   position: absolute;
+
+}
+
+#toggle:checked + label span:nth-child(2){
+   background-color: red; 
+    transform: rotate(45deg);
+    position: absolute;
+    
+
+}
+#toggle:checked + label span:nth-child(3){
+   display: none;
+
+}
+
+
